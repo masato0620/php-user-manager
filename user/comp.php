@@ -31,7 +31,7 @@ try {
     //メールアドレスが重複していなかった場合
     else{
       //ユーザー登録
-      $query = "INSERT INTO  users (user_name , mail_address , pass_word , create_dt , update_dt) VALUES ( ?, ?, ?, ?, ? )";
+      $query = "INSERT INTO  users (user_name , mail_address , pass_word , create_dt , updata_dt) VALUES ( ?, ?, ?, ?, ? )";
       $stmt = mysqli_prepare($link, $query);
       //パスワードを不可逆変換する
       $cry_pass_word = md5($pass_word);

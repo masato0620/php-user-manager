@@ -79,20 +79,14 @@ if($user_name === ""){
     <div class="mb-3">
         <label for="examplInputusername" class="form-label">Username</label>
         <input type="text" class="form-control" readnly id="examplInputusername" name="user_name"aria-describedby="emailHelp" value="<?php echo $user_name; ?>"> 
-        <div class="col-sm-10">
-    </div>
   </div>
     <div class="mb-3">
         <label for="examplInputEmailaddress" class="form-label">Emailaddress</label>
         <input type="email" class="form-control" readnly id="examplInputEmailaddress" name="mail_address" aria-describedby="emailHelp" value="<?php echo $mail_address ; ?>">
-        <div class="col-sm-10">
-    </div>
   </div>
   <div class="mb-3">
         <label for="examplInputPassword" class="form-label">Pass_word</label>
         <input  type="pass_word" class="form-control" readnly id="examplInputPassword" name="pass_word" aria-describedby="emailHelp" value="<?php echo $pass_word; ?>">
-        <div class="col-sm-10">
-    </div>
   </div>
   <button type="submit" class="btn btn-primary">Sign in</button>
 </form>

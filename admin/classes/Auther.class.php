@@ -2,7 +2,7 @@
 
 class Auther {
 
-    const LOGIN_CHK_KEY = "islogin";
+    const LOGIN_CHK_KEY = "isLogin";
 
   private $sessionId = null;
 
@@ -15,21 +15,21 @@ class Auther {
   public function login_chk($is_top = false)
   {
     if($is_top) {
-      if(!empty($_SESSION[ Auther::LOGIN_CHK_KEY])) {
+      if(!empty($_SESSION[ Auther::LOGIN_CHK_KEY ])) {
         header("Location: ./list.php");
         exit;
       }
     } else {
-      if(empty($_SESSION[ Auther::LOGIN_CHK_KEY])) {
+      if(empty($_SESSION[ Auther::LOGIN_CHK_KEY ])) {
         header("Location: ./login.php");
         exit;
       }
     }
   }
 
-  public function login($mail_address, $pass_word)
+  public function login($mail_adress, $pass_word)
   {
-    if($mail_address === "" && $pass_word === "") {
+    if($mail_adress === "aaa@aaa.com" && $pass_word === "aaaaa") {
       return true;
     } else {
       return false;
